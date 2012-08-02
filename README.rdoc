@@ -1,6 +1,19 @@
 = Punch Clock
 
-Usage
+A minimal, command-line program to tell when I'm working or not.
+
+== Installation
+
+Punch clock has a +gemspec+ file but I haven't released it as a Gem.
+You can still install it like one, though:
+
+  $ git clone git://github.com/dhruvbansal/punch_clock.git
+  $ cd punch_clock
+  $ sudo rake install
+
+== Usage
+
+Update when you're working or not:
 
   $ punch
   Not working
@@ -10,3 +23,16 @@ Usage
   $ punch out
   $ punch
   Not working
+
+See the clock
+
+  $ punch
+  Working
+  $ punch show
+  2012-07-27 13:37:56 -0500;2012-07-27 13:38:08 -0500
+  2012-07-27 13:38:15 -0500;2012-08-02 16:04:25 -0500
+  2012-08-02 16:12:07 -0500;
+
+Graph your work history (requires an X-session)
+
+  $ punch draw

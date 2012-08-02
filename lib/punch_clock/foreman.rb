@@ -69,8 +69,10 @@ module PunchClock
         clock.add!(Shift.parse($1))
       when /^add$/
         raise CommandError.new("To add a shift pass an additional argument like `2012-07-27 13:37:56 -0500;2012-07-27 13:38:08 -0500'")
-      when /^version/
+      when /^version$/
         say PunchClock.version
+      when /^draw$/
+        Report.new(clock).draw!
       else
         raise CommandError.new("Unknown command: #{cmd}")
       end
