@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+$: << File.expand_path("../../lib", __FILE__) unless $:.include?(File.expand_path("../../lib", __FILE__))
+require 'punch_clock'
+PunchClock::Foreman.start!(File.expand_path("~/.punch_clock"), ARGV.dup)
