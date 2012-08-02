@@ -1,0 +1,12 @@
+= Punch Clock
+
+Usage
+
+  $ punch
+  Not working
+  $ punch in
+  $ punch
+  Working
+  $ punch out
+  $ punch
+  Not working
